@@ -10,6 +10,7 @@
   "author": "Bernardo A. Dal Corno",
   "license": "GNU",
   "dependencies": {
+    "clarify": "^2.1.0",
     "stacktracey": "^2.1.8"
   }
 }

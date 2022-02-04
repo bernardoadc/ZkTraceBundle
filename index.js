@@ -1,3 +1,4 @@
+require('clarify')
 const StackTracey = require('stacktracey')
 
 module.exports = function (e, logger) {
