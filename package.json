@@ -1,0 +1,14 @@
+{
+  "name": "@z3k/zk-trace-bundle",
+  "version": "1.0.0",
+  "description": "Bundle for tracing stack/errors",
+  "main": "index.js",
+  "private": false,
+  "keywords": [
+    "stack trace"
+  ],
+  "author": "Bernardo A. Dal Corno",
+  "license": "GNU",
+  "dependencies": {
+  }
+}
