@@ -10,5 +10,6 @@
   "author": "Bernardo A. Dal Corno",
   "license": "GNU",
   "dependencies": {
+    "stack-trace": "^0.0.10"
   }
 }
