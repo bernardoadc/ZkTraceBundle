@@ -1,11 +1,7 @@
-const stackTrace = require('stack-trace')
+const StackTracey = require('stacktracey')
 
 module.exports = function (e, logger) {
-  let trace
-
-  const map = c => `at ${c.getMethodName() || c.getFunctionName() || '<anonymous>'} ${c.getFileName()}:${c.getLineNumber()}:${c.getColumnNumber()}`
-  if (e) trace = stackTrace.parse(e).map(map)
-  else trace = stackTrace.get().map(map)
+  const trace = new StackTracey(e).items.map(c => `at ${c.calleeShort || '???'} ${c.fileRelative}:${c.line}:${c.column}`)
   const stack = `${e.message}\n  ${trace.join('\n  ')}`
 
   if (logger) logger(stack)
